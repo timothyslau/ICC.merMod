@@ -1,6 +1,9 @@
 ###################################################
 ### compute ICC in lme4
 ###################################################
+# FINISHED: Negative Binomial, Binomial, Poisson, & Gaussian
+# UNFINISHED: Gamma & Inverse Gaussian
+
 # use
 # https://stat.ethz.ch/pipermail/r-sig-mixed-models/2014q3/022538.html
 # for example interpretation
