@@ -17,7 +17,7 @@ ICC.NB <- function(model, numerator){
   sigma_2 <- sum(mout["vcov"]) # sum of random effects variance in denominator
   beta <- as.numeric(fixef(model)["(Intercept)"]) # fixed effect intercept
   r <- getME(object = model, "glmer.nb.theta") # theta
-  icc <- (exp(sigma_a2) - 1) / ((exp(sigma_2) - 1) + (exp(sigma_2) / r) + (exp(-beta) - (sigma_2 / 2)))
+  icc <- (exp(sigma_a2) - 1) / ((exp(sigma_2) - 1) + (exp(sigma_2) / r) + (-beta - (sigma_2 / 2)))
   return(icc)
 }
 # example (cid = a school)
